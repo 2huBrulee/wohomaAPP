@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RegistroTienda">
+
+    <include
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:id="@+id/layout_nombre_tienda"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="left"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Nombre"
+            android:textAlignment="textEnd"
+            android:textColor="@android:color/background_dark" />
+
+        <EditText
+            android:id="@+id/nombreTiendaTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:ems="10"
+            android:hint="Nombre de la Tienda"
+            android:inputType="text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_direc_tienda"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="left"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Direccion"
+            android:textAlignment="textEnd"
+            android:textColor="@android:color/background_dark" />
+
+        <EditText
+            android:id="@+id/direcTiendaTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:ems="10"
+            android:hint="Direccion de la Tienda"
+            android:inputType="text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_ref_tienda"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="left"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Referencia"
+            android:textAlignment="textEnd"
+            android:textColor="@android:color/background_dark" />
+
+        <EditText
+            android:id="@+id/refTiendaTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:ems="10"
+            android:hint="Referencia de la Tienda"
+            android:inputType="text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_telf_tienda"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="left"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Telefono"
+            android:textAlignment="textEnd"
+            android:textColor="@android:color/background_dark" />
+
+        <EditText
+            android:id="@+id/telfTiendaTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:ems="10"
+            android:hint="Telefono de la Tienda"
+            android:inputType="phone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_botones_GPS12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/GPS1Btn"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:onClick="gps1Btn"
+            android:text="@string/hintgps1"
+            android:textColor="@android:color/background_light" />
+
+        <Space
+            android:layout_width="15dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/GPS2Btn"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:onClick="gps2Btn"
+            android:text="@string/hintgps2"
+            android:textColor="@android:color/background_light" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_botones_GPS34"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/GPS3Btn"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:onClick="gps3Btn"
+            android:text="@string/hintgps3"
+            android:textColor="@android:color/background_light" />
+
+        <Space
+            android:layout_width="15dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/GPS4Btn"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:onClick="gps4Btn"
+            android:text="@string/hintgps4"
+            android:textColor="@android:color/background_light" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_registrar_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/registrarTiendaBtn"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:onClick="registrarBtn"
+            android:text="@string/hintregistrar"
+            android:textColor="@android:color/background_light" />
+    </LinearLayout>
+
+</LinearLayout>

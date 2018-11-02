@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="250px"
+            android:layout_height="150px"
+            android:layout_margin="0dp"
+            android:src="@drawable/logo_wohoma"/>
+
+        <EditText
+            android:id="@+id/userTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:hint="@string/hintCorreo"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/passTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:ems="10"
+            android:hint="@string/hintPassword"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/iniciarBtn"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="114dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@color/colorPrimaryDark"
+            android:text="@string/hintIniciarSesion"
+            android:textColor="@android:color/background_light" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
